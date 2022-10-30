@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="496.0" prefWidth="297.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="titleLabel" layoutX="38.0" layoutY="14.0" prefHeight="42.0" prefWidth="343.0" text="TitleLabel" textAlignment="CENTER">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="95.0" text="First Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstNameTextField" layoutX="38.0" layoutY="122.0" promptText="First Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lastNameTextLabel" layoutX="38.0" layoutY="186.0" text="Last Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lastNameTextField" layoutX="38.0" layoutY="213.0" promptText="Last Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="birthDatePicker" layoutX="38.0" layoutY="309.0" prefHeight="27.0" prefWidth="198.0" promptText="dd/MM/yyyy" />
+      <Label fx:id="lastNameTextLabel1" layoutX="39.0" layoutY="282.0" text="Date of Birth">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="addMemberButton" layoutX="38.0" layoutY="415.0" mnemonicParsing="false" onAction="#onAddButtonClick" prefHeight="39.0" prefWidth="84.0" text="Add">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelButton" cancelButton="true" layoutX="259.0" layoutY="415.0" mnemonicParsing="false" onAction="#onCancelButtonClick" prefHeight="39.0" prefWidth="84.0" text="Cancel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorLabel" layoutX="163.0" layoutY="65.0" text="ERROR" textFill="RED" />
+      <Button fx:id="editMemberButton" layoutX="38.0" layoutY="415.0" mnemonicParsing="false" onAction="#onEditButtonClick" prefHeight="39.0" prefWidth="84.0" text="Edit" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
